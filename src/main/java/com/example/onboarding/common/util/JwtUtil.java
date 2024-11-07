@@ -129,6 +129,8 @@ public class JwtUtil {
             throw new CustomException(TOKEN_EXPIRATION);
         } catch (UnsupportedJwtException e) {
             throw new CustomException(UNSUPPORTED_TOKEN);
+        } catch (MalformedJwtException e) {
+            throw new CustomException(INVALID_TOKEN);
         } catch (IllegalArgumentException e) {
             throw new CustomException(INVALID_TOKEN);
         }
