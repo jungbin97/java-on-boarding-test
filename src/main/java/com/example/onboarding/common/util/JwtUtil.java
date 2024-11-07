@@ -59,7 +59,7 @@ public class JwtUtil {
         return BEARER_PREFIX +
                 Jwts.builder()
                         .setSubject(username)
-                        .claim(AUTHORIZATION_KEY, userRole)
+                        .claim(AUTHORIZATION_KEY, userRole.getAuthority())
                         .setExpiration(new Date(date.getTime() + accessTokenExpiration))
                         .setIssuedAt(date)
                         .signWith(key, signatureAlgorithm)
@@ -79,7 +79,7 @@ public class JwtUtil {
         return BEARER_PREFIX +
                 Jwts.builder()
                         .setSubject(username)
-                        .claim(AUTHORIZATION_KEY, userRole)
+                        .claim(AUTHORIZATION_KEY, userRole.getAuthority())
                         .setExpiration(new Date(date.getTime() + refreshTokenExpiration))
                         .setIssuedAt(date)
                         .signWith(key, signatureAlgorithm)
