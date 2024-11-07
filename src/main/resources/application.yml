@@ -15,3 +15,14 @@ spring:
       hibernate:
         show_sql: true
         format_sql: true
+
+jwt:
+  secret:
+    key: ${JWT_SECRET_KEY}
+
+  token:
+    expiration:
+      # 60분
+      access: 3600000
+      # 7일
+      refresh: 604800000
