@@ -1,5 +1,7 @@
 package com.example.onboarding.user.service;
 
+import com.example.onboarding.common.exception.CustomException;
+import com.example.onboarding.common.exception.ErrorEnum;
 import com.example.onboarding.user.entity.User;
 import com.example.onboarding.user.entity.UserRole;
 import com.example.onboarding.user.dto.AuthorityResponse;
@@ -28,7 +30,7 @@ public class UserService {
         Optional<User> checkUsername = userRepository.findByUsername(username);
         // 회원 중복확인
         if (checkUsername.isPresent()) {
-            throw new IllegalArgumentException("중복된 사용자가 존재합니다.");
+            throw new CustomException(ErrorEnum.INVALID_INPUT_VALUE);
         }
 
         User user = new User(username, password, request.getNickname(), UserRole.USER);
