@@ -31,4 +31,11 @@ public class User {
     @Column(name = "user_role", nullable = false)
     @Enumerated(EnumType.STRING)
     private UserRole userRole;
+
+    public User(String username, String password, String nickname, UserRole userRole) {
+        this.username = username;
+        this.password = password;
+        this.nickname = nickname;
+        this.userRole = userRole;
+    }
 }
