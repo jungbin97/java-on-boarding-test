@@ -4,7 +4,7 @@ import com.example.onboarding.common.exception.CustomException;
 import com.example.onboarding.common.exception.ErrorEnum;
 import com.example.onboarding.common.security.UserDetailsImpl;
 import com.example.onboarding.common.util.JwtUtil;
-import com.example.onboarding.user.UserRole;
+import com.example.onboarding.user.entity.UserRole;
 import com.example.onboarding.user.dto.SignRequestDto;
 import com.example.onboarding.user.dto.SignResponseDto;
 import com.fasterxml.jackson.databind.ObjectMapper;

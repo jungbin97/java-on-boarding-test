@@ -2,7 +2,7 @@ package com.example.onboarding.common.security;
 
 import com.example.onboarding.common.exception.CustomException;
 import com.example.onboarding.common.exception.ErrorEnum;
-import com.example.onboarding.user.User;
+import com.example.onboarding.user.entity.User;
 import com.example.onboarding.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;

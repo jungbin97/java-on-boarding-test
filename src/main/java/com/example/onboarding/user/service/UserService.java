@@ -1,7 +1,7 @@
 package com.example.onboarding.user.service;
 
-import com.example.onboarding.user.User;
-import com.example.onboarding.user.UserRole;
+import com.example.onboarding.user.entity.User;
+import com.example.onboarding.user.entity.UserRole;
 import com.example.onboarding.user.dto.AuthorityResponse;
 import com.example.onboarding.user.dto.SignupRequestDto;
 import com.example.onboarding.user.dto.SignupResponseDto;

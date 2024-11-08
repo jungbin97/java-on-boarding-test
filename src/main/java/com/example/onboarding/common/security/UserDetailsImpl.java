@@ -1,7 +1,7 @@
 package com.example.onboarding.common.security;
 
-import com.example.onboarding.user.User;
-import com.example.onboarding.user.UserRole;
+import com.example.onboarding.user.entity.User;
+import com.example.onboarding.user.entity.UserRole;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
