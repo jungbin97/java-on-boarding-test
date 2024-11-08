@@ -1,4 +1,4 @@
-package com.example.onboarding.user;
+package com.example.onboarding.user.entity;
 
 /**
  * UserRole

@@ -1,7 +1,7 @@
 package com.example.onboarding.common.util;
 
 import com.example.onboarding.common.exception.CustomException;
-import com.example.onboarding.user.UserRole;
+import com.example.onboarding.user.entity.UserRole;
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.security.Keys;
 import jakarta.annotation.PostConstruct;
